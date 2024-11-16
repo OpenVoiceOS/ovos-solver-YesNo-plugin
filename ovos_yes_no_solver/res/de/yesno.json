@@ -10,18 +10,7 @@
     "offen sichtlich",
     "freilich",
     "bestimmt",
-    "auf jeden",
-    "jedenfalls",
-    "einverstanden",
-    "okay",
-    "doch",
-    "in Ordnung",
-    "geritzt",
-    "abgemacht",
-    "gebongt",
-    "o.k.",
-    "okey",
-    "ok"
+    "auf jeden"
   ],
   "no": [
     "nein",
@@ -30,25 +19,7 @@
     "neehee",
     "niet",
     "nicht",
-    "no",
-    "nöff",
-    "nope",
-    "nada",
-    "never",
-    "negativ",
-    "niemals",
-    "kein",
-    "keine",
-    "kaum",
-    "keinen fall",
-    "keinesfalls",
-    "keineswegs",
-    "ausgeschlossen",
-    "mitnichten",
-    "mit nichten",
-    "unmöglich",
-    "nichts da", 
-    "weit gefehlt"
+    "no"
   ],
   "neutral_yes": [
     "sicher",
@@ -58,9 +29,7 @@
     "gerne",
     "gut",
     "gute",
-    "gewiss",
-    "bitte",
-    "stimmt"
+    "gewiss"
   ],
   "neutral_no": [
     "vergiss",
@@ -70,9 +39,6 @@
     "fehler",
     "problem",
     "problematisch",
-    "lüge",
-    "lügst",
-    "gelogen",
-    "schlecht"
+    "lüge"
   ]
 }
