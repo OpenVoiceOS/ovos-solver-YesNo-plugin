@@ -1,24 +1,20 @@
 # Changelog
 
-## [0.2.0a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.0a1) (2024-11-07)
+## [0.2.1a2](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.1a2) (2024-11-16)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.1.1a1...0.2.0a1)
-
-**Merged pull requests:**
-
-- feat: auto translation [\#6](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/6) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.1.1a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.1.1a1) (2024-11-07)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.1.0...0.1.1a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.1a1...0.2.1a2)
 
 **Merged pull requests:**
 
-- documentation: algorithm [\#5](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/5) ([JarbasAl](https://github.com/JarbasAl))
+- pt-pt/translate [\#9](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/9) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
-## [0.1.0](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.1.0) (2024-11-07)
+## [0.2.1a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.1a1) (2024-11-16)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.1.0a0...0.1.0)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.0...0.2.1a1)
+
+**Merged pull requests:**
+
+- it-it/translate [\#11](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/11) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
