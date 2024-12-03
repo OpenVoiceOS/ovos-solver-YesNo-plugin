@@ -3,42 +3,42 @@
     "jah",
     "jep",
     "jepper",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    "bekræfte",
+    "bekræftende",
+    "ja",
+    "bekræftet",
+    "korrekt",
+    "enig",
+    "aftalt",
+    "virkelig"
   ],
   "no": [
     "nix",
-    null,
-    null,
+    "ikke",
+    "negativ",
     "nej",
     "nah",
-    null,
-    null
+    "være uenig",
+    "uenig"
   ],
   "neutral_yes": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    "behage",
+    "sikker",
+    "helt sikkert",
+    "sikkert",
+    "passende",
+    "bevilget",
+    "åbenbart",
+    "virkelig"
   ],
   "neutral_no": [
-    null,
-    null,
-    null,
+    "uønsket",
+    "uønsket",
+    "upassende",
     "løgn",
-    null,
-    null,
-    null,
-    null
+    "lyver",
+    "fejl",
+    "fejlagtigt",
+    "forkert"
   ]
 }
