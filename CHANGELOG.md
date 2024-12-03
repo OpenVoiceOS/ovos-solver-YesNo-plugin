@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.4a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.4a1) (2024-12-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.3a1...0.2.4a1)
+
+**Merged pull requests:**
+
+- fix: lang matching [\#18](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/18) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.3a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.3a1) (2024-12-03)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.2...0.2.3a1)
