@@ -1,55 +1,29 @@
+import os.path
 import unittest
+import json
 from ovos_yes_no_solver import YesNoSolver
 
 
 class TestYesNo(unittest.TestCase):
-    def test_yesno(self):
-        solver = YesNoSolver()
+    def setUp(self):
+        self.solver = YesNoSolver()
+        # Load the test data from the JSON file
+        with open(os.path.join(os.path.dirname(__file__), "test_sentences_en.json"), "r") as f:
+            self.test_data = json.load(f)
 
+    def test_yesno(self):
         def test_utt(text, expected):
-            res = solver.match_yes_or_no(text, "en-us")
+            res = self.solver.match_yes_or_no(text, "en-us")
             self.assertEqual(res, expected)
 
-        test_utt("yes", True)
-        test_utt("no", False)
-        test_utt("no way", False)
-        test_utt("don't think so", False)
-        test_utt("i think not", False)
-        test_utt("that's affirmative", True)
-        test_utt("beans", None)
-        test_utt("no, but actually, yes", True)
-        test_utt("yes, but actually, no", False)
-        test_utt("yes, yes, yes, but actually, no", False)
-        test_utt("please", True)
-        test_utt("please don't", False)
-        test_utt("I agree", True)
-        test_utt("agreed", True)
-        test_utt("I disagree", False)
-        test_utt("disagreed", False)
+        # Test "yes" cases
+        for sentence in self.test_data["yes"]:
+            test_utt(sentence, True)
 
-        # test "neutral_yes" -> only count as yes word if there isn't a "no" in sentence
-        test_utt("no! please! I beg you", False)
-        test_utt("yes, i don't want it for sure", False)
-        test_utt("please! I beg you", True)
-        test_utt("i want it for sure", True)
-        test_utt("obviously", True)
-        test_utt("indeed", True)
-        test_utt("no, I obviously hate it", False)
+        # Test "no" cases
+        for sentence in self.test_data["no"]:
+            test_utt(sentence, False)
 
-        # test "neutral_no" -> only count as no word if there isn't a "yes" in sentence
-        test_utt("do I hate it when companies sell my data? yes, that's certainly undesirable", True)
-        test_utt("that's certainly undesirable", False)
-        test_utt("yes, it's a lie", True)
-        test_utt("no, it's a lie", False)
-        test_utt("he is lying", False)
-        test_utt("correct, he is lying", True)
-        test_utt("it's a lie", False)
-        test_utt("you are mistaken", False)
-        test_utt("that's a mistake", False)
-        test_utt("wrong answer", False)
-
-        # test double negation
-        test_utt("it's not a lie", True)
-        test_utt("he is not lying", True)
-        test_utt("you are not mistaken", True)
-        test_utt("tou are not wrong", True)
+        # Test "null" cases
+        for sentence in self.test_data["null"]:
+            test_utt(sentence, None)
