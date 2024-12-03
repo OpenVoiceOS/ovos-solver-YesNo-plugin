@@ -45,6 +45,7 @@ def required(requirements_file):
                 if pkg.strip() and not pkg.startswith("#")]
 
 
+
 PLUGIN_ENTRY_POINT = 'ovos-solver-yes-no-plugin=ovos_yes_no_solver:YesNoSolver'
 setup(
     name='ovos-solver-yes-no-plugin',
@@ -55,6 +56,7 @@ setup(
     author_email='jarbasai@mailfence.com',
     license='MIT',
     packages=['ovos_yes_no_solver'],
+    include_package_data=True,
     zip_safe=True,
     keywords='OVOS openvoiceos plugin utterance fallback query',
     entry_points={'neon.plugin.solver': PLUGIN_ENTRY_POINT},

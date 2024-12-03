@@ -37,8 +37,8 @@ class YesNoSolver(QuestionSolver):
 
     def match_yes_or_no(self, text: str, lang: str):
         _langs = os.listdir(f"{os.path.dirname(__file__)}/res")
-        lang2, score = closest_match(lang, _langs)
-        if score < 10:
+        lang2, lang_distance = closest_match(lang, _langs)
+        if lang_distance > 10:  # unsupported lang, use translation and hope for the best
             text = self.translate(text, target_lang="en", source_lang=lang)
             return self.match_yes_or_no(text, "en")
         

@@ -1,0 +1,45 @@
+{
+  "yes": [
+    "yes",
+    "that's affirmative",
+    "no, but actually, yes",
+    "please",
+    "I agree",
+    "agreed",
+    "please! I beg you",
+    "i want it for sure",
+    "obviously",
+    "indeed",
+    "do I hate it when companies sell my data? yes, that's certainly undesirable",
+    "yes, it's a lie",
+    "correct, he is lying",
+    "it's not a lie",
+    "he is not lying",
+    "you are not mistaken",
+    "tou are not wrong"
+  ],
+  "no": [
+    "no",
+    "no way",
+    "don't think so",
+    "i think not",
+    "yes, but actually, no",
+    "yes, yes, yes, but actually, no",
+    "please don't",
+    "I disagree",
+    "disagreed",
+    "no! please! I beg you",
+    "yes, i don't want it for sure",
+    "no, I obviously hate it",
+    "that's certainly undesirable",
+    "no, it's a lie",
+    "he is lying",
+    "it's a lie",
+    "you are mistaken",
+    "that's a mistake",
+    "wrong answer"
+  ],
+  "null": [
+    "beans"
+  ]
+}
