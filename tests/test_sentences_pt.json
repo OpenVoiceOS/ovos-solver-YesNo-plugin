@@ -1,0 +1,45 @@
+{
+  "yes": [
+    "sim",
+    "isso é afirmativo",
+    "não, mas na verdade sim",
+    "por favor",
+    "Concordo",
+    "acordado",
+    "por favor! Eu imploro-te",
+    "eu quero isso com certeza",
+    "obviamente",
+    "de fato",
+    "Eu odeio quando as empresas vendem meus dados? Sim, isso é certamente indesejável",
+    "sim, é mentira",
+    "correto, ele está a mentir",
+    "não é mentira",
+    "ele não está mentindo",
+    "você não está enganado",
+    "não estás errado"
+  ],
+  "no": [
+    "não",
+    "sem hipótese",
+    "não acho",
+    "eu acho que não",
+    "sim, mas na verdade, não",
+    "sim, sim, sim, mas na verdade, não",
+    "por favor não",
+    "discordo",
+    "discordou",
+    "não! por favor! eu imploro a você",
+    "sim, eu não quero isso com certeza",
+    "não, eu obviamente odeio isso",
+    "isso é certamente indesejável",
+    "não, é mentira",
+    "ele está a mentir",
+    "é mentira",
+    "você está enganado",
+    "isso está errado",
+    "resposta errada"
+  ],
+  "null": [
+    "feijões"
+  ]
+}
