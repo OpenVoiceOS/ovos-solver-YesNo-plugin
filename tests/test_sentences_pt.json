@@ -6,21 +6,21 @@
     "por favor",
     "Concordo",
     "acordado",
-    null,
+    "por favor! Eu imploro-te",
     "eu quero isso com certeza",
     "obviamente",
     "de fato",
     "Eu odeio quando as empresas vendem meus dados? Sim, isso é certamente indesejável",
     "sim, é mentira",
-    null,
+    "correto, ele está a mentir",
     "não é mentira",
     "ele não está mentindo",
     "você não está enganado",
-    null
+    "não estás errado"
   ],
   "no": [
     "não",
-    null,
+    "sem hipótese",
     "não acho",
     "eu acho que não",
     "sim, mas na verdade, não",
@@ -33,10 +33,10 @@
     "não, eu obviamente odeio isso",
     "isso é certamente indesejável",
     "não, é mentira",
-    null,
+    "ele está a mentir",
     "é mentira",
     "você está enganado",
-    null,
+    "isso está errado",
     "resposta errada"
   ],
   "null": [
