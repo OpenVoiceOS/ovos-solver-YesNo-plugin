@@ -1,9 +1,10 @@
 import json
 import os.path
 import re
-import string
-from ovos_plugin_manager.templates.solvers import QuestionSolver
+
 from langcodes import closest_match
+from ovos_plugin_manager.templates.solvers import QuestionSolver
+from quebra_frases import word_tokenize
 
 
 class YesNoSolver(QuestionSolver):
@@ -20,20 +21,22 @@ class YesNoSolver(QuestionSolver):
 
     @staticmethod
     def normalize(text: str, lang: str):
+        # Remove single characters surrounded by spaces
+        text = re.sub(r'\s+[a-zA-Z]\s+', ' ', text)
+        # Replace multiple spaces with a single space
+        text = re.sub(r'\s+', ' ', text).strip()
+        # Convert to lowercase
+        text = text.lower()
 
-        # remove all single characters
-        document = re.sub(r'\s+[a-zA-Z]\s+', ' ', text)
-
-        # Substituting multiple spaces with single space
-        document = re.sub(r'\s+', ' ', document, flags=re.I)
-
-        # Converting to Lowercase
-        text = document.lower()
-
+        # Handle language-specific normalization
         if lang.startswith("en"):
             text = text.replace("don't", "do not")
 
-        return text
+        stopwords = ["the"]
+        if lang.startswith("pt"):
+            stopwords = ["esta", "está", "estás", "é", "de", "com", "são"]
+        words = [w for w in word_tokenize(text) if w not in stopwords]
+        return " ".join(words)
 
     def match_yes_or_no(self, text: str, lang: str):
         _langs = os.listdir(f"{os.path.dirname(__file__)}/res")
@@ -41,68 +44,65 @@ class YesNoSolver(QuestionSolver):
         if lang_distance > 10:  # unsupported lang, use translation and hope for the best
             text = self.translate(text, target_lang="en", source_lang=lang)
             return self.match_yes_or_no(text, "en")
-        
+
         lang = lang2
 
         if lang not in self.resources:
             resource_file = f"{os.path.dirname(__file__)}/res/{lang}/yesno.json"
-
             with open(resource_file) as f:
                 words = json.load(f)
                 self.resources[lang] = {k: [_.lower() for _ in v] for k, v in words.items()}
 
         text = self.normalize(text, lang)
-        toks = [w.strip(string.punctuation) for w in text.split()]
 
         # if user says yes but later says no, he changed his mind mid-sentence
         # the highest index is the last yesno word
         res = None
         best = -1
-        # check if user said yes
-        for w in self.resources[lang]["yes"]:
-            if w not in toks:
-                continue
-            idx = text.index(w)
+
+        # Compile regex patterns
+        yes_pattern = re.compile(r'\b(?:' + '|'.join(self.resources[lang]["yes"]) + r')\b')
+        no_pattern = re.compile(r'\b(?:' + '|'.join(self.resources[lang]["no"]) + r')\b')
+        neutral_yes_pattern = re.compile(r'\b(?:' + '|'.join(self.resources[lang].get("neutral_yes", [])) + r')\b')
+        neutral_no_pattern = re.compile(r'\b(?:' + '|'.join(self.resources[lang].get("neutral_no", [])) + r')\b')
+
+        # Match yes words
+        for match in yes_pattern.finditer(text):
+            idx = match.start()
             if idx >= best:
                 best = idx
                 res = True
 
-        # check if user said no
-        for w in self.resources[lang]["no"]:
-            if w not in toks:
-                continue
-
-            idx = text.index(w)
+        # Match no words
+        for match in no_pattern.finditer(text):
+            idx = match.start()
             if idx >= best:
                 best = idx
 
-                # handle double negatives, eg "its not a lie"
-                double_negs = [f"{w} {neg}" for neg in self.resources[lang].get("neutral_no", [])]
-                for n in double_negs:
-                    if n in text and text.index(n) <= idx:
+                # Handle double negatives (e.g., "not a lie")
+                double_negatives = [
+                    f"{match.group()} {neutral}"
+                    for neutral in self.resources[lang].get("neutral_no", [])
+                ]
+                for pattern in double_negatives:
+                    if re.search(re.escape(pattern), text):
                         res = True
                         break
                 else:
                     res = False
 
-        # check if user said no, but only if there isn't a previous yes
-        # handles cases such as "yes/no, that's a lie" vs "it's a lie" -> no
+        # Match neutral no (if no "yes" detected before)
         if res is None:
-            for w in self.resources[lang].get("neutral_no", []):
-                if w not in toks:
-                    continue
-                idx = text.index(w)
+            for match in neutral_no_pattern.finditer(text):
+                idx = match.start()
                 if idx >= best:
                     best = idx
                     res = False
 
-        # check if user said yes, but only if there isn't a previous no
-        # handles cases such as "no! please! I beg you"
+        # Match neutral yes (if no "no" detected before)
         if res is None:
-            for w in self.resources[lang].get("neutral_yes", []):
-                if w not in toks:
-                    continue
-                idx = text.index(w)
+            for match in neutral_yes_pattern.finditer(text):
+                idx = match.start()
                 if idx >= best:
                     best = idx
                     res = True

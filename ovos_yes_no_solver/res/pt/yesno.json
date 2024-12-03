@@ -29,16 +29,26 @@
     "obviamente",
     "obvio",
     "facto",
-    "fato"
+    "fato",
+    "certeza"
   ],
   "neutral_no": [
+    "sem hipótese",
+    "não há hipótese",
+    "mentindo",
+    "mentir",
+    "enganar",
+    "enganado",
+    "enganada",
+    "indesejável",
     "mentira",
+    "mentiras",
     "falso",
     "inadequado",
     "mentira",
     "mentiroso",
     "erro",
-    "(enganado|enganada)",
-    "errado"
+    "errado",
+    "errada"
   ]
 }
