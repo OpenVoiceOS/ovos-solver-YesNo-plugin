@@ -1,16 +1,44 @@
 {
   "yes": [
-    "Ja",
-    "yeah",
-    "jepper",
+    "jah",
     "jep",
-    "jo da"
+    "jepper",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
   ],
   "no": [
     "nix",
-    "negativ",
-    "nope",
+    null,
+    null,
     "nej",
-    "nah"
+    "nah",
+    null,
+    null
+  ],
+  "neutral_yes": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "neutral_no": [
+    null,
+    null,
+    null,
+    "løgn",
+    null,
+    null,
+    null,
+    null
   ]
 }
