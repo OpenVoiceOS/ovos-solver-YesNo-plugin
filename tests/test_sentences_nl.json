@@ -1,0 +1,45 @@
+{
+  "yes": [
+    "Ja",
+    "dat is goed",
+    "nee, maar eigenlijk wel",
+    "Alsjeblieft",
+    "mee eens",
+    "is goed",
+    "alsjeblieft! Ik smeek je",
+    "ik wil het zeker weten",
+    "blijkbaar",
+    "inderdaad",
+    "Of ik het vervelend vind als bedrijven mijn gegevens verkopen? Ja, dat is zeker onwenselijk",
+    "ja, het is een leugen",
+    "correct, hij liegt",
+    "het is geen leugen",
+    "hij liegt niet",
+    "je hebt gelijk",
+    "jij hebt geen ongelijk"
+  ],
+  "no": [
+    "Nee",
+    "niet waar\n",
+    "Ik denk het niet",
+    "ik denk het niet",
+    "ja, maar eigenlijk niet",
+    "ja, ja, ja, maar eigenlijk nee",
+    "alsjeblieft niet",
+    "Ik ben het er niet mee eens",
+    "oneens",
+    "Nee! alsjeblieft! Ik smeek je",
+    "ja, ik wil het zeker niet",
+    "nee, ik haat het echt",
+    "dat is zeker onwenselijk",
+    "nee, het is een leugen",
+    "hij liegt",
+    "het is een leugen",
+    "je vergist je",
+    "dat is een vergissing",
+    "verkeerd (ge)antwoord"
+  ],
+  "null": [
+    "bonen"
+  ]
+}
