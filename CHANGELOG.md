@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.6a2](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.6a2) (2024-12-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.6a1...0.2.6a2)
+
+**Merged pull requests:**
+
+- Nl-NL translations [\#25](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/25) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
 ## [0.2.6a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.6a1) (2024-12-04)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.5...0.2.6a1)
