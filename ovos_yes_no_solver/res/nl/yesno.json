@@ -1,10 +1,44 @@
 {
   "yes": [
     "graag",
-    "ja"
+    "ja",
+    "ja hoor",
+    "zeker[ weten]|ja[ ](zeker|wel|hoor)|ja(zeker|wel|hoor)",
+    null,
+    "yes",
+    "natuurlijk",
+    "juist",
+    "mee eens",
+    "ja zeker",
+    "inderdaad"
   ],
   "no": [
-    "bedankt",
-    "nee"
+    "Nee (hoor)",
+    "niet",
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "neutral_yes": [
+    null,
+    "is goed",
+    null,
+    "zeker[ s]",
+    "doe maar",
+    "is goed hoor",
+    null,
+    null
+  ],
+  "neutral_no": [
+    "(absoluut|zeker|liever|helaas|dat hoeft) niet",
+    "dat wil ik niet",
+    "niet doen",
+    "nee, dank je",
+    null,
+    "ik heb me vergist",
+    "Neuh",
+    null
   ]
 }
