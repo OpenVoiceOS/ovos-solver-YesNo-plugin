@@ -89,6 +89,9 @@ It achieves this by analyzing specific words and their positions in the input te
 
 The plugin decision logic focuses on interpreting the user’s response as affirmative (yes), negative (no), or neutral. It does this by examining the order and presence of specific words in the user’s input. 
 
+<details>
+  <summary>Click for more details</summary>
+
 
 1. **Last Word Priority**:
    - The algorithm assumes that the user’s final words reflect their decision. It processes words in order and gives priority to the last relevant “yes” or “no” word, considering it as the final decision.
@@ -112,6 +115,9 @@ The plugin decision logic focuses on interpreting the user’s response as affir
 
 5. **Default to Neutral**:
    - If no "yes" or "no" (including neutral forms) is found in the text, the solver defaults to `None`, indicating neutrality or ambiguity in the response.
+
+
+</details>
 
 ## 🌐 Translating to Other Languages
 
@@ -153,7 +159,9 @@ This parser is effective for simple responses but has limitations due to the inh
 5. **🤷 Ambiguity**: Defaults to `None` for unclear responses.  
 6. **📂 Language Files**: Requires well-maintained language resources.  
 
-Here are some considerations:
+<details>
+  <summary>Click for more details</summary>
+
 
 1. **Context Sensitivity**: 
    - This algorithm primarily focuses on individual keywords and their positions within the sentence, but it does not deeply understand context or nuanced expressions. Phrases with complex sentiment (e.g., sarcasm, idioms) may yield incorrect results because the algorithm cannot detect these subtleties.
@@ -177,6 +185,7 @@ Here are some considerations:
 7. **Unclear Scope for Edge Cases**:
    - Ambiguous cases, like where a “neutral_yes” word appears alongside a “neutral_no” word, may confuse the parser, which could lead to inconsistent interpretations. Currently, the algorithm lacks nuanced handling for cases that combine ambiguous terms with yes/no phrases.
 
+</details>
 
 ### 🧩 Contribute
 
