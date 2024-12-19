@@ -4,6 +4,12 @@ only indicates if the user answered "yes" or "no" to a yes/no prompt
 
 > suited to **parse** user responses
 
+  * [Install](#install)
+  * [Usage](#usage)
+  * [Algorithm](#algorithm)
+  * [Translating to Other Languages](#translating-to-other-languages)
+  * [Limitations](#limitations)
+  
 ## Install
 
 `pip install ovos-solver-yes-no-plugin`
@@ -105,7 +111,7 @@ The plugin decision logic focuses on interpreting the user’s response as affir
 5. **Default to Neutral**:
    - If no "yes" or "no" (including neutral forms) is found in the text, the solver defaults to `None`, indicating neutrality or ambiguity in the response.
 
-### Translating "neutral_yes" and "neutral_no" to Other Languages
+## Translating to Other Languages
 
 When creating `neutral_yes` and `neutral_no` lists in other languages, keep these tips in mind:
 
