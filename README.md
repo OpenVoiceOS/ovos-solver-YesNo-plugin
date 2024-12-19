@@ -16,18 +16,8 @@ only indicates if the user answered "yes" or "no" to a yes/no prompt
 
 ## Usage
 
-Standalone usage
+Standalone usage examples from unittests
 
-```python
-from ovos_yes_no_solver import YesNoSolver
-
-bot = YesNoSolver()
-assert bot.spoken_answer("i agree") == "yes"
-assert bot.spoken_answer("no way") == "no"
-```
-
-
-more examples from unittests
 ```python
 from ovos_yes_no_solver import YesNoSolver
 
