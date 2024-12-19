@@ -119,35 +119,6 @@ The plugin decision logic focuses on interpreting the user’s response as affir
 
 </details>
 
-## 🌐 Translating to Other Languages
-
-When translating for other languages:
-- Focus on **subtle affirmations** (e.g., "bien sûr" for French).
-- Identify **indirect negatives** (e.g., "mensonge" for French).
-- Account for **double negatives** to ensure accuracy.
-
-When creating `neutral_yes` and `neutral_no` lists in other languages, keep these tips in mind:
-
-1. **Subtle Affirmations**:
-   - "neutral_yes" words should indicate mild agreement without being outright affirmatives. Common examples in English include "sure" or "indeed." Choose words that generally indicate positivity or agreement but aren't direct synonyms of "yes."
-
-2. **Subtle Negations**:
-   - For "neutral_no," look for words that imply disagreement or negativity indirectly, like "lie" or "mistake." These words should subtly indicate disapproval or dissent without being equivalent to “no.”
-
-3. **Context-Dependent Meaning**:
-   - Words in these categories may change meaning depending on context. Select words that are usually positive or negative but might also appear in complex statements. For example, in Portuguese, "claro" (meaning "clear" or "of course") can be a soft affirmation, while "errado" (meaning "wrong") implies mild disagreement.
-
-4. **Handling Double Negatives**:
-   - Be mindful of phrases where negating a neutral word implies affirmation (e.g., “not wrong” meaning "correct"). Include these subtleties in translations to avoid incorrect interpretations, especially in languages with common double-negative structures.
-
-### Example for Translating
-
-Suppose you're translating for French:
-- **"neutral_yes"** might include words like "bien sûr" (of course) or "évidemment" (obviously), which imply agreement without a direct "yes."
-- **"neutral_no"** might include words like "mensonge" (lie) or "erreur" (mistake), indicating a negative stance without a direct “no.”
-
-Carefully selecting and testing these words for their indirect connotations can improve the solver's effectiveness across languages.
-
 ## ⚠️ Limitations
 
 This parser is effective for simple responses but has limitations due to the inherent complexity of natural language and cultural nuances. 
@@ -187,6 +158,35 @@ This parser is effective for simple responses but has limitations due to the inh
 
 </details>
 
-### 🧩 Contribute
+## 🌐 Translating to Other Languages
+
+When translating for other languages:
+- Focus on **subtle affirmations** (e.g., "bien sûr" for French).
+- Identify **indirect negatives** (e.g., "mensonge" for French).
+- Account for **double negatives** to ensure accuracy.
+
+When creating `neutral_yes` and `neutral_no` lists in other languages, keep these tips in mind:
+
+1. **Subtle Affirmations**:
+   - "neutral_yes" words should indicate mild agreement without being outright affirmatives. Common examples in English include "sure" or "indeed." Choose words that generally indicate positivity or agreement but aren't direct synonyms of "yes."
+
+2. **Subtle Negations**:
+   - For "neutral_no," look for words that imply disagreement or negativity indirectly, like "lie" or "mistake." These words should subtly indicate disapproval or dissent without being equivalent to “no.”
+
+3. **Context-Dependent Meaning**:
+   - Words in these categories may change meaning depending on context. Select words that are usually positive or negative but might also appear in complex statements. For example, in Portuguese, "claro" (meaning "clear" or "of course") can be a soft affirmation, while "errado" (meaning "wrong") implies mild disagreement.
+
+4. **Handling Double Negatives**:
+   - Be mindful of phrases where negating a neutral word implies affirmation (e.g., “not wrong” meaning "correct"). Include these subtleties in translations to avoid incorrect interpretations, especially in languages with common double-negative structures.
+
+### Example for Translating
+
+Suppose you're translating for French:
+- **"neutral_yes"** might include words like "bien sûr" (of course) or "évidemment" (obviously), which imply agreement without a direct "yes."
+- **"neutral_no"** might include words like "mensonge" (lie) or "erreur" (mistake), indicating a negative stance without a direct “no.”
+
+Carefully selecting and testing these words for their indirect connotations can improve the solver's effectiveness across languages.
+
+## 🧩 Contribute
 
 Contributions to expand vocabulary, improve translations, or handle edge cases are welcome! 🎉  
