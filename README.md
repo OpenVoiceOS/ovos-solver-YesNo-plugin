@@ -1,27 +1,19 @@
-# YesNo parser
+# ✅ YesNo Parser
 
-only indicates if the user answered "yes" or "no" to a yes/no prompt
+A simple tool to indicate whether a user answered "yes" or "no" to a yes/no prompt.
 
-> suited to **parse** user responses
+> 🧩 Suited to **parse** user responses
+  
+## 📥 Install
 
-## Install
-
-`pip install ovos-solver-yes-no-plugin`
+```bash
+pip install ovos-solver-yes-no-plugin
+```
 
 ## Usage
 
-Standalone usage
+Standalone usage examples from unittests
 
-```python
-from ovos_yes_no_solver import YesNoSolver
-
-bot = YesNoSolver()
-assert bot.spoken_answer("i agree") == "yes"
-assert bot.spoken_answer("no way") == "no"
-```
-
-
-more examples from unittests
 ```python
 from ovos_yes_no_solver import YesNoSolver
 
@@ -76,11 +68,30 @@ test_utt("you are not mistaken", True)
 test_utt("tou are not wrong", True)
 ```
 
-## Algorithm
+## 🧠 Algorithm
+
+The plugin's decision logic focuses on interpreting the user’s response as:
+- **Affirmative** (✅ yes)
+- **Negative** (❌ no)
+- **Neutral** (🤷 none)
+
+It achieves this by analyzing specific words and their positions in the input text.
+
+> It is only meant to be slightly better than simply checking for "yes" and "no" in strings
+
+### Key Steps:
+1. **🛑 Last Word Priority**: The final relevant word is treated as the user's decision.
+2. **📜 Yes and No Categories**: Predefined lists of affirmative (`["yes", "yeah"]`) and negative (`["no", "nah"]`) words determine intent.
+3. **⚡ Neutral Words**: Subtle context-dependent terms like `["please", "indeed"]` act as hints.
+4. **🔄 Double Negatives**: Phrases like `"not a lie"` are interpreted as affirmative.
+5. **🤷 Default to Neutral**: Ambiguous responses return `None`.
+
 
 The plugin decision logic focuses on interpreting the user’s response as affirmative (yes), negative (no), or neutral. It does this by examining the order and presence of specific words in the user’s input. 
 
-> It is only meant to be slightly better than simply checking for "yes" and "no" in strings
+<details>
+  <summary>Click for more details</summary>
+
 
 1. **Last Word Priority**:
    - The algorithm assumes that the user’s final words reflect their decision. It processes words in order and gives priority to the last relevant “yes” or “no” word, considering it as the final decision.
@@ -105,7 +116,54 @@ The plugin decision logic focuses on interpreting the user’s response as affir
 5. **Default to Neutral**:
    - If no "yes" or "no" (including neutral forms) is found in the text, the solver defaults to `None`, indicating neutrality or ambiguity in the response.
 
-### Translating "neutral_yes" and "neutral_no" to Other Languages
+
+</details>
+
+## ⚠️ Limitations
+
+This parser is effective for simple responses but has limitations due to the inherent complexity of natural language and cultural nuances. 
+
+1. **❌ Context Sensitivity**: Cannot detect sarcasm or idioms.  
+2. **🌍 Language Nuances**: May misinterpret cultural expressions or colloquialisms.  
+3. **🔄 Double Negatives**: Complex layering of negations might yield errors.  
+4. **📖 Vocabulary**: Limited to predefined words, missing rare or slang terms.  
+5. **🤷 Ambiguity**: Defaults to `None` for unclear responses.  
+6. **📂 Language Files**: Requires well-maintained language resources.  
+
+<details>
+  <summary>Click for more details</summary>
+
+
+1. **Context Sensitivity**: 
+   - This algorithm primarily focuses on individual keywords and their positions within the sentence, but it does not deeply understand context or nuanced expressions. Phrases with complex sentiment (e.g., sarcasm, idioms) may yield incorrect results because the algorithm cannot detect these subtleties.
+
+2. **Language-Specific Ambiguities**:
+   - The parser relies on lists of words stored in resource files, and these lists may not fully capture language-specific expressions or colloquialisms. For example, in English, “for sure” can mean agreement but might mean something different in other contexts or languages.
+   - Translating “neutral” words like "please" or "mistake" for different languages can be challenging, as some expressions do not have direct equivalents and may require interpretation based on cultural context.
+
+3. **Double Negatives and Mixed Intentions**:
+   - While the algorithm can handle some double negatives (e.g., “not a lie” as an affirmative), it may fail in cases with complex layering of negations or ambiguous expressions. For instance, “I don’t disagree” may be interpreted as negative, but it often implies agreement in English.
+
+4. **Limited Vocabulary**:
+   - Since the algorithm only looks for predefined “yes” and “no” keywords, new or uncommon terms outside these lists are missed. This can be a problem for less frequently used affirmations or negations that aren’t included in the resource files. Keeping these files updated with all possible variations across languages is challenging and requires regular maintenance.
+
+5. **Ambiguity and Neutral Responses**:
+   - If the input contains neither clear “yes” nor “no” words, the solver defaults to `None`. However, this is a simplistic approach and may not capture the user’s intended response in cases where indirect language is used to express consent or disagreement.
+
+6. **Dependency on Language Files**:
+   - The algorithm depends heavily on the presence of language-specific resources (`yesno.json` files). If resources for a particular language are missing or incomplete, the algorithm raises an error. This restricts usage to supported languages and requires careful management of the resource files for each supported language.
+
+7. **Unclear Scope for Edge Cases**:
+   - Ambiguous cases, like where a “neutral_yes” word appears alongside a “neutral_no” word, may confuse the parser, which could lead to inconsistent interpretations. Currently, the algorithm lacks nuanced handling for cases that combine ambiguous terms with yes/no phrases.
+
+</details>
+
+## 🌐 Translating to Other Languages
+
+When translating for other languages:
+- Focus on **subtle affirmations** (e.g., "bien sûr" for French).
+- Identify **indirect negatives** (e.g., "mensonge" for French).
+- Account for **double negatives** to ensure accuracy.
 
 When creating `neutral_yes` and `neutral_no` lists in other languages, keep these tips in mind:
 
@@ -129,30 +187,6 @@ Suppose you're translating for French:
 
 Carefully selecting and testing these words for their indirect connotations can improve the solver's effectiveness across languages.
 
-## Limitations
+## 🧩 Contribute
 
-This parser is effective for simple responses but has limitations due to the inherent complexity of natural language and cultural nuances. 
-
-Here are some key limitations to consider:
-
-1. **Context Sensitivity**: 
-   - This algorithm primarily focuses on individual keywords and their positions within the sentence, but it does not deeply understand context or nuanced expressions. Phrases with complex sentiment (e.g., sarcasm, idioms) may yield incorrect results because the algorithm cannot detect these subtleties.
-
-2. **Language-Specific Ambiguities**:
-   - The parser relies on lists of words stored in resource files, and these lists may not fully capture language-specific expressions or colloquialisms. For example, in English, “for sure” can mean agreement but might mean something different in other contexts or languages.
-   - Translating “neutral” words like "please" or "mistake" for different languages can be challenging, as some expressions do not have direct equivalents and may require interpretation based on cultural context.
-
-3. **Double Negatives and Mixed Intentions**:
-   - While the algorithm can handle some double negatives (e.g., “not a lie” as an affirmative), it may fail in cases with complex layering of negations or ambiguous expressions. For instance, “I don’t disagree” may be interpreted as negative, but it often implies agreement in English.
-
-4. **Limited Vocabulary**:
-   - Since the algorithm only looks for predefined “yes” and “no” keywords, new or uncommon terms outside these lists are missed. This can be a problem for less frequently used affirmations or negations that aren’t included in the resource files. Keeping these files updated with all possible variations across languages is challenging and requires regular maintenance.
-
-5. **Ambiguity and Neutral Responses**:
-   - If the input contains neither clear “yes” nor “no” words, the solver defaults to `None`. However, this is a simplistic approach and may not capture the user’s intended response in cases where indirect language is used to express consent or disagreement.
-
-6. **Dependency on Language Files**:
-   - The algorithm depends heavily on the presence of language-specific resources (`yesno.json` files). If resources for a particular language are missing or incomplete, the algorithm raises an error. This restricts usage to supported languages and requires careful management of the resource files for each supported language.
-
-7. **Unclear Scope for Edge Cases**:
-   - Ambiguous cases, like where a “neutral_yes” word appears alongside a “neutral_no” word, may confuse the parser, which could lead to inconsistent interpretations. Currently, the algorithm lacks nuanced handling for cases that combine ambiguous terms with yes/no phrases.
+Contributions to expand vocabulary, improve translations, or handle edge cases are welcome! 🎉  
