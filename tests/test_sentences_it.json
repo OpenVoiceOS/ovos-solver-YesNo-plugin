@@ -1,0 +1,45 @@
+{
+  "yes": [
+    "Sì",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "se odio quando le aziende vendono i miei dati? sì, è una pessima cosa",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "non è sbagliato"
+  ],
+  "no": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "null": [
+    "[UNUSED]"
+  ]
+}
