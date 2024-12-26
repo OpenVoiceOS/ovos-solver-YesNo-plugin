@@ -1,0 +1,45 @@
+{
+  "yes": [
+    "Sì",
+    "è affermativo",
+    "no, ma in realtà sì",
+    "Per favore",
+    "Sono d'accordo",
+    "concordato",
+    "per favore! ti prego",
+    "lo voglio per certo",
+    "ovviamente",
+    "Infatti",
+    "se odio quando le aziende vendono i miei dati? sì, è una pessima cosa",
+    "sì, è una bugia",
+    "corretto, sta mentendo",
+    "non è una bugia",
+    "non sta mentendo",
+    "non ti sbagli",
+    "non è sbagliato"
+  ],
+  "no": [
+    "NO",
+    "non c'è modo",
+    "non credo proprio",
+    "Non credo",
+    "sì, ma in realtà no",
+    "sì, sì, sì, ma in realtà, no",
+    "per favore non farlo",
+    "non sono d'accordo",
+    "non era d'accordo",
+    "no! per favore! ti prego",
+    "sì, non lo voglio di sicuro",
+    "no, ovviamente lo odio",
+    "questo è certamente indesiderabile",
+    "no, è una bugia",
+    "sta mentendo",
+    "è una bugia",
+    "ti sbagli",
+    "è un errore",
+    "risposta sbagliata"
+  ],
+  "null": [
+    "[UNUSED]"
+  ]
+}
