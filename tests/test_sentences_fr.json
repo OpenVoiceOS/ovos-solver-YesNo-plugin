@@ -1,0 +1,45 @@
+{
+  "yes": [
+    "oui",
+    "c'est affirmatif",
+    "non, mais en fait, oui",
+    "s'il te plaît",
+    "Je suis d'accord",
+    "en accord",
+    "S'il te plaît ! Je t'en prie",
+    "je le veux à coup sûr",
+    "évidemment",
+    "en effet",
+    "Est-ce que je déteste quand les entreprises vendent mes données ? Oui, c'est certainement indésirable",
+    "oui, c'est un mensonge",
+    "c'est vrai, il ment",
+    "ce n'est pas un mensonge",
+    "il ne ment pas",
+    "tu ne te trompes pas",
+    "tu n'as pas tort"
+  ],
+  "no": [
+    "Non",
+    "certainement pas",
+    "je ne pense pas",
+    "je ne pense pas",
+    "oui, mais en fait, non",
+    "oui, oui, oui, mais en fait, non",
+    "S'il te plaît, ne le fais pas",
+    "je ne suis pas d'accord",
+    "en désaccord",
+    "Non ! S'il te plaît ! Je t'en prie",
+    "oui, je n'en veux certainement pas",
+    "Non, je déteste évidemment ça",
+    "c'est certainement indésirable",
+    "non, c'est un mensonge",
+    "il ment",
+    "c'est un mensonge",
+    "tu te trompes",
+    "c'est une erreur",
+    "mauvaise réponse"
+  ],
+  "null": [
+    "haricots"
+  ]
+}

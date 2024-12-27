@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.2.8a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.8a1) (2024-12-25)
+## [0.2.9a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.9a1) (2024-12-27)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.7...0.2.8a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.8...0.2.9a1)
 
 **Merged pull requests:**
 
-- added italian translation [\#31](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/31) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- tests/test\_sentences\_fr.json [\#33](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/33) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
