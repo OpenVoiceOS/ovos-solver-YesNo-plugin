@@ -1,13 +1,13 @@
 {
   "yes": [
     "sí",
-    "si us plau",
+    "sip",
     "per descomptat",
-    "oi tant!",
-    "així és",
-    "sí",
-    "confirmat",
-    "correcte",
+    "(confirmo|confirme|confirm|oi tant|o i tant|oh i tant|oh i tan)",
+    "(afirmatiu|afirmativa|afirmatius|afirmatives|així és)",
+    "(sí|oc)",
+    "(confirmat|confirmada|confirmats|confirmades)",
+    "(correcte|correcta|correctes|bé)",
     "d'acord",
     "entès",
     "prou"
@@ -17,28 +17,28 @@
     "negatiu",
     "i ara!",
     "no pas",
-    "noooo",
-    "en desacord",
-    "disconforme"
+    "(nooo|noooo)",
+    "(en desacord|no hi estic d'acord)",
+    "(disconforme|no hi estic d'acord|disconformes)"
   ],
   "neutral_yes": [
-    "si us plau",
+    "(si us plau|si et plau|sisplau)",
     "segur",
     "segurament",
     "sens dubte",
-    "apropiat",
-    "apropiat",
-    "evidentment",
-    "prou"
+    "(apropiat|apropiada|apropiats|apropiades)",
+    "(apropiat|apropiada|apropiats|apropiades|escaient|escaients|adient|adients)",
+    "(evidentment|òbviament|obvi|òbvia|obvis|òbvies)",
+    "(prou|de fet)"
   ],
   "neutral_no": [
-    "no és desitjable",
-    "no és volgut",
-    "inadequat",
-    "mentida",
-    "mentida",
-    "error",
-    "equivocat",
-    "incorrecte"
+    "(indesitjable|indestijables|no desitjable|no desitjables)",
+    "(no volgut|no volguda|no vulguts|no volgudes)",
+    "(inadequat|inadequada|inapropiat|inapropiada|inadequats|inadequades|inapropiats|inapropiades)",
+    "(menteix|menteixo|mentix|mentim|mentiu)",
+    "(mentida|mentides|mentint|mentira|mentires)",
+    "(error|errors|errada|errades|equivocació|equivocacions)",
+    "(equivocat|equivocada|equivocats|equivocades|errat|errada|errats|errades)",
+    "(incorrecte|incorrecta|incorrectes)"
   ]
 }
