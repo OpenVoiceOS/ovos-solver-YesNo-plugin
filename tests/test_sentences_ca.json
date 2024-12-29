@@ -1,0 +1,45 @@
+{
+  "yes": [
+    "sí",
+    "correcte",
+    "no, però sí",
+    "sisplau",
+    "D'acord",
+    "entès",
+    "sisplau! T'ho demano",
+    "ho vull",
+    "Obvi",
+    "Òbviament",
+    "odio quan les empreses venen les meves dades? Sí, són uns indesitja bles",
+    "sí, és una mentida",
+    "correcte, menteix",
+    "no és mentida",
+    "no menteix",
+    "no aneu errat",
+    "no esteu equivocat"
+  ],
+  "no": [
+    "no",
+    "no pas",
+    "em penso que no",
+    "no hi estic d'acord",
+    "sí, però no",
+    "sí, sí, però realment, no",
+    "no, sisplau",
+    "Estic en desacord",
+    "Discrepo",
+    "No! Sisplau! T'ho demano",
+    "sí, no ho vull",
+    "no, òbviament ho odio",
+    "Certament, això no és desitjable",
+    "no, és una mentida",
+    "menteix",
+    "és una mentida",
+    "aneu errat",
+    "això és un error",
+    "resposta incorrecta"
+  ],
+  "null": [
+    "fesols"
+  ]
+}
