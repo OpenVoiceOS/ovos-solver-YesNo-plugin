@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.9a2](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.9a2) (2024-12-29)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.9a1...0.2.9a2)
+
+**Merged pull requests:**
+
+- Add Catalans strings [\#36](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/36) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- Add Catalans strings [\#35](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/35) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
 ## [0.2.9a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.9a1) (2024-12-27)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.8...0.2.9a1)
