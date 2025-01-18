@@ -1,14 +1,44 @@
 {
   "yes": [
     "s'il vous plait",
-    "voui",
-    "oui",
+    "yep",
+    "ouep",
     "ouais",
-    "bien sur"
+    "bien sur",
+    "oui",
+    "confirmer",
+    "correct",
+    "accepter",
+    "convenu",
+    "en effet"
   ],
   "no": [
     "négatif",
     "nan",
-    "non"
+    "non",
+    "nope",
+    "nah",
+    "disagree",
+    "en désaccord"
+  ],
+  "neutral_yes": [
+    "s'il te plaît",
+    "bien sûr",
+    "sûrement",
+    "certainement",
+    "approprié",
+    "approprié",
+    "évidemment",
+    "en effet"
+  ],
+  "neutral_no": [
+    "indésirable",
+    "indésirable",
+    "inapproprié",
+    "mensonge",
+    "mentir",
+    "erreur",
+    "trompé",
+    "faux"
   ]
 }
