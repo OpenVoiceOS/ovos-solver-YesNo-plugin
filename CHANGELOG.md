@@ -1,33 +1,20 @@
 # Changelog
 
-## [0.2.9a4](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.9a4) (2025-01-18)
+## [0.2.11a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.11a1) (2025-06-08)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.9a3...0.2.9a4)
-
-**Merged pull requests:**
-
-- Missing translation [\#38](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/38) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-
-## [0.2.9a3](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.9a3) (2024-12-29)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.9a2...0.2.9a3)
-
-## [0.2.9a2](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.9a2) (2024-12-29)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.9a1...0.2.9a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.10a1...0.2.11a1)
 
 **Merged pull requests:**
 
-- Add Catalans strings [\#36](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/36) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- Add Catalans strings [\#35](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/35) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- fix: compatibility with ovos-plugin-manager 1.X.X [\#42](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/42) ([JarbasAl](https://github.com/JarbasAl))
 
-## [0.2.9a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.9a1) (2024-12-27)
+## [0.2.10a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.10a1) (2025-02-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.8...0.2.9a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.9...0.2.10a1)
 
 **Merged pull requests:**
 
-- tests/test\_sentences\_fr.json [\#33](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/33) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- nl-nl translations [\#40](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/40) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
