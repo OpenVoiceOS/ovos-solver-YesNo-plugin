@@ -1,7 +1,8 @@
 import json
 import os.path
 import re
-
+from typing import Optional
+from ovos_bus_client.session import SessionManager
 from langcodes import closest_match
 from ovos_plugin_manager.templates.solvers import QuestionSolver
 from quebra_frases import word_tokenize
@@ -113,12 +114,21 @@ class YesNoSolver(QuestionSolver):
         return res
 
     # abstract Solver methods
-    def get_data(self, query, context=None):
-        return {"answer": self.get_spoken_answer(query, context)}
+    def get_spoken_answer(self, query: str,
+                          lang: Optional[str] = None,
+                          units: Optional[str] = None) -> Optional[str]:
+        """
+        Obtain the spoken answer for a given query.
 
-    def get_spoken_answer(self, query, context=None):
-        context = context or {}
-        lang = context.get("lang", "en-us")
+        Args:
+            query (str): The query text.
+            lang (Optional[str]): Optional language code. Defaults to None.
+            units (Optional[str]): Optional units for the query. Defaults to None.
+
+        Returns:
+            str: The spoken answer as a text response.
+        """
+        lang = lang or SessionManager.get().lang
         res = self.match_yes_or_no(query, lang)
         if res is None:
             return None
