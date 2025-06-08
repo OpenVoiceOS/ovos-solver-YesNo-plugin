@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.11a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.11a1) (2025-06-08)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.10a1...0.2.11a1)
+
+**Merged pull requests:**
+
+- fix: compatibility with ovos-plugin-manager 1.X.X [\#42](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/42) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.10a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.10a1) (2025-02-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.9...0.2.10a1)
