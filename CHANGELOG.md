@@ -1,20 +1,12 @@
 # Changelog
 
-## [0.2.11a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.11a1) (2025-06-08)
+## [0.2.12a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.12a1) (2025-07-12)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.10a1...0.2.11a1)
-
-**Merged pull requests:**
-
-- fix: compatibility with ovos-plugin-manager 1.X.X [\#42](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/42) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.2.10a1](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/tree/0.2.10a1) (2025-02-17)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.9...0.2.10a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/compare/0.2.11...0.2.12a1)
 
 **Merged pull requests:**
 
-- nl-nl translations [\#40](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/40) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- adding missing German translations [\#44](https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/pull/44) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
