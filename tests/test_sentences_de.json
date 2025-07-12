@@ -1,0 +1,45 @@
+{
+  "yes": [
+    "Ja",
+    "das ist positiv",
+    "nein, aber eigentlich ja",
+    "Bitte",
+    "Ich stimme zu",
+    "bestätigt",
+    "bitte! Ich flehe dich an",
+    "ich will es auf jeden Fall",
+    "offensichtlich",
+    "In der Tat",
+    "Hasse ich es, wenn Unternehmen meine Daten verkaufen? Ja, das ist sicherlich unerwünscht",
+    "ja, es ist eine Lüge",
+    "richtig, er lügt",
+    "es ist keine Lüge",
+    "er lügt nicht",
+    "du liegst nicht falsch",
+    "du liegst nicht falsch"
+  ],
+  "no": [
+    "NEIN",
+    "auf keinen Fall",
+    "glaube nicht",
+    "ich glaube nicht",
+    "ja, aber eigentlich nein",
+    "ja, ja, ja, aber eigentlich nein",
+    "bitte nicht",
+    "ich bin nicht einverstanden",
+    "nicht einverstanden",
+    "nein! bitte! ich flehe dich an",
+    "ja, ich will es auf keinen Fall",
+    "nein, ich hasse es offensichtlich",
+    "das ist sicherlich unerwünscht",
+    "nein, es ist eine Lüge",
+    "er lügt",
+    "es ist eine Lüge",
+    "du liegst falsch",
+    "Das ist ein Fehler",
+    "falsche Antwort"
+  ],
+  "null": [
+    "Bohnen"
+  ]
+}
