@@ -3,7 +3,13 @@
 A simple tool to indicate whether a user answered "yes" or "no" to a yes/no prompt.
 
 > 🧩 Suited to **parse** user responses
-  
+
+______________
+
+> ⚠️ DEPRECATED - use [ovos-YesNo-plugin](https://github.com/OpenVoiceOS/ovos-YesNo-plugin) with `ovos-plugin-manager`>=**2.4.0**
+
+______________
+
 ## 📥 Install
 
 ```bash
